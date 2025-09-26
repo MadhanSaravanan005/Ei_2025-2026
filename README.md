@@ -1,4 +1,4 @@
-# Educational Initiatives Coding Exercise 2024-25
+# Educational Initiatives Coding Exercise 2025-26
 
 ## Description
 This repository contains two exercises: exercise-1 for understanding design patterns with suitable use cases, and exercise-2 for a console-based application designed to help astronauts manage their daily tasks efficiently.

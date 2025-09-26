@@ -1,23 +1,26 @@
-# Ei_2025-2026
+# Educational Initiatives Coding Exercise 2024-25
 
-This repository contains exercises and design pattern implementations.
+## Description
+This repository contains two exercises: exercise-1 for understanding design patterns with suitable use cases, and exercise-2 for a console-based application designed to help astronauts manage their daily tasks efficiently.
 
-## Structure
+## Exercise 1: Problem Statement on Design Patterns
 
-```
-Ei_2025-26/
-├── exercise-1/
-│     ├── creational-design-pattern/
-│     │      └── Abstract/
-│     └── (other files if needed)
-├── exercise-2/
-└── README.md
-```
+### Overview
+This exercise demonstrates the understanding and application of various software design patterns through six different use cases.
 
-## Exercises
+### Behavioral Design Patterns
+- Strategy
+- Template Method
 
-### Exercise 1 - Creational Design Patterns
-- **Abstract Factory Pattern**: Implementation of the Abstract Factory design pattern for car manufacturing
+### Creational Design Patterns
+- Abstract Factory
+- Builder
 
-### Exercise 2
-- (To be added)
+### Structural Design Patterns
+- Proxy
+- Bridge
+
+## Exercise 2: Astronaut Daily Schedule Organizer
+
+### Project Description
+The "Astronaut Daily Schedule Organizer" is a console-based application designed to help astronauts manage their daily tasks efficiently. It allows users to add, remove, view, and manage tasks while ensuring no conflicts in scheduling.

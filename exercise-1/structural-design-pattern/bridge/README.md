@@ -18,11 +18,11 @@ This project demonstrates the use of the **Bridge Pattern** in Java. The pattern
 1. Ensure you have Java installed on your machine.
 2. Compile the Java files: 
    ```bash
-   javac src/*.java Main.java
+   javac -d out Main.java src/*.java
    ```
 3. Run the Main class:
    ```bash
-   java Main
+   java -cp out Main
    ```
 4. Enter a payment amount when prompted.
 
@@ -47,9 +47,3 @@ Paid 3000.0 using Credit Card.
 Enter payment amount: 8000
 Paid 8000.0 using PayPal.
 ```
-
-## Pattern Benefits
-- **Decoupling**: Payment processing logic is separated from payment method implementations
-- **Flexibility**: Easy to add new payment methods without modifying existing payment classes
-- **Runtime Selection**: Payment method can be chosen dynamically based on business logic
-- **Maintainability**: Changes to payment methods don't affect the payment processing abstraction

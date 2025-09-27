@@ -14,11 +14,11 @@ This project demonstrates the use of the **Strategy Pattern** in Java. The patte
 1. Ensure you have Java installed on your machine.
 2. Compile the Java files:
    ```bash
-   javac -cp . Main.java src/*.java
+   javac -d out Main.java src/*.java
    ```
 3. Run the Main class:
    ```bash
-   java Main
+   java -cp out Main
    ```
 
 ## Sample Output

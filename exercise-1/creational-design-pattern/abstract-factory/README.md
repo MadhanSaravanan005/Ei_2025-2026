@@ -29,11 +29,3 @@ Choose car type (luxury/economy):
 luxury
 Car Assembled with: V8 Engine, Leather Seat, Alloy Wheels
 ```
-
-## Pattern Benefits
-- Promotes consistency among products in a family.
-- Isolates concrete classes from client code.
-- Makes it easy to introduce new families of products.
-
----
-Feel free to modify or extend this project for your learning or development needs!

@@ -15,6 +15,6 @@ public class VegPizzaBuilder extends MealBuilder {
     public void buildToppings() {
         meal.addTopping("Olives");
         meal.addTopping("Bell Peppers");
-        meal.addTopping("Jalapeños");
+        meal.addTopping("Jalapenos");
     }
 }

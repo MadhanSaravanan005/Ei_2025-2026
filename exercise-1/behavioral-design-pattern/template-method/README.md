@@ -34,12 +34,12 @@ This project demonstrates the **Template Method design pattern** in Java. The Te
 
 2. **Compile the Java files**:
    ```bash
-   javac src/*.java Main.java
+   javac -d out Main.java src/*.java
    ```
 
 3. **Run the Main class**:
    ```bash
-   java Main
+   java -cp out Main
    ```
 
 4. **Follow the prompts**: Choose between Football (1) or Cricket (2)

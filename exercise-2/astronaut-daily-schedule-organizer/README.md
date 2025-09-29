@@ -42,7 +42,7 @@ Ensure you have the following installed on your machine:
 
 ### Clone the Repository
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/MadhanSaravanan005/Ei_2025-2026.git
 cd astronaut-daily-schedule-organizer
 ```
 

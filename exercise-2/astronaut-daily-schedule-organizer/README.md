@@ -15,13 +15,7 @@ The Astronaut Daily Schedule Organizer is a console-based application designed t
 
 ## Additional Features
 
-- **Logging**: Generates a timestamped log file on each run.
-
-Example filenames:
-```
-astronaut_schedule-2025-09-30-18-15-05.log  
-astronaut_schedule-2025-09-30-18-16-59.log  
-```
+- **Logging**: Generates a timestamped log file on each run for debugging and audit purposes. Log messages are written to file only, keeping the console clean for user interaction.
 
 - **Pure Java**: Implemented without external dependencies to keep the setup simple.
 
@@ -43,7 +37,10 @@ Ensure you have the following installed on your machine:
 ### Clone the Repository
 ```bash
 git clone https://github.com/MadhanSaravanan005/Ei_2025-2026.git
-cd astronaut-daily-schedule-organizer
+```
+### Navigate to the  current   project directory
+```bash
+cd exercise-2/astronaut-daily-schedule-organizer/src
 ```
 
 ### Execute the Application

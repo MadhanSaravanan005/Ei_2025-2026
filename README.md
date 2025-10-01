@@ -23,4 +23,4 @@ This exercise demonstrates the understanding and application of various software
 ## Exercise 2: Astronaut Daily Schedule Organizer
 
 ### Project Description
-The "Astronaut Daily Schedule Organizer" is a console-based application designed to help astronauts manage their daily tasks efficiently. It allows users to add, remove, view, and manage tasks while ensuring no conflicts in scheduling.
+The "Astronaut Daily Schedule Organizer" is a console-based application designed to help astronauts to  manage their daily tasks efficiently. It allows users to add, remove, view, and manage tasks while ensuring no conflicts in scheduling.

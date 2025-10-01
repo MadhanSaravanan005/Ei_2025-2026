@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-
 public class ApplicationLogger {
     private static ApplicationLogger instance;
     private static final String LOG_FILE = "astronaut_schedule.log";
@@ -52,9 +51,7 @@ public class ApplicationLogger {
     public void log(LogLevel level, String message) {
         String timestamp = LocalDateTime.now().format(TIMESTAMP_FORMAT);
         String logEntry = String.format("[%s] %s: %s", timestamp, level, message);
-        
-        System.out.println(logEntry);
-        
+       
         try {
             writeToFile(logEntry);
         } catch (IOException e) {

@@ -10,12 +10,12 @@ public class Task {
     private LocalTime startTime;       
     private LocalTime endTime;         
     private Priority priority;         
-    private boolean isCompleted;       
+    private boolean isCompleted;
 
     private static final DateTimeFormatter MILITARY_TIME_FORMATTER = DateTimeFormatter.ofPattern("HHmm");
 
     public Task(String description, String startTime, String endTime, String priority) throws InvalidTimeFormatException {
-        
+      
         if (description == null || description.trim().isEmpty()) {
             throw new InvalidTimeFormatException("Task description cannot be null or empty");
         }
@@ -52,12 +52,12 @@ public class Task {
     public LocalTime getStartTime() { return startTime; }
     public LocalTime getEndTime() { return endTime; }
     public Priority getPriority() { return priority; }  
-    public String getPriorityString() { return priority.toString(); } 
+    public String getPriorityString() { return priority.toString(); }  
     public int getPriorityLevel() { return priority.getLevel(); }  
-    public String getPriorityDescription() { return priority.getDescription(); } 
+    public String getPriorityDescription() { return priority.getDescription(); }  
     public boolean isCompleted() { return isCompleted; }
     
-    
+   
     public void setDescription(String description) { this.description = description; }
     public void setStartTime(LocalTime startTime) { this.startTime = startTime; }
     public void setEndTime(LocalTime endTime) { this.endTime = endTime; }

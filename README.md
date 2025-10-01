@@ -19,6 +19,7 @@ This exercise demonstrates the understanding and application of various software
 ### Structural Design Patterns
 - Proxy
 - Bridge
+---
 
 ## Exercise 2: Astronaut Daily Schedule Organizer
 

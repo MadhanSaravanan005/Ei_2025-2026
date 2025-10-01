@@ -10,7 +10,7 @@ public class Main {
 
         PaymentMethod method;
 
-        // Change payment strategy based on amount
+        
         if (amount <= 1000) {
             method = new UpiPayment();
         } else if (amount <= 5000) {

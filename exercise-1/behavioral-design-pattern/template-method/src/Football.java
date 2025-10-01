@@ -2,7 +2,7 @@ package src;
 
 public class Football extends Game {
     private int turns = 0;
-    private final int maxTurns = 3; // simulate few turns
+    private final int maxTurns = 3; 
 
     @Override
     protected void initialize() {

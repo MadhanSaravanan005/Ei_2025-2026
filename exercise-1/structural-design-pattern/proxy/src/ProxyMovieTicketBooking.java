@@ -3,7 +3,7 @@ package src;
 public class ProxyMovieTicketBooking implements MovieTicket {
 
     private RealMovieTicketBooking realBooking;
-    private int maxSeatsAllowed = 5; // access control example
+    private int maxSeatsAllowed = 5; 
 
     public ProxyMovieTicketBooking() {
         this.realBooking = new RealMovieTicketBooking();

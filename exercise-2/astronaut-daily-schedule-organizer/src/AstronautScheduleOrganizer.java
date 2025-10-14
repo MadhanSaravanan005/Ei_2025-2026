@@ -1,6 +1,7 @@
 import exception.InvalidTimeFormatException;
 import exception.TaskConflictException;
 import exception.TaskNotFoundException;
+import exception.DuplicateTaskException;
 import factory.TaskFactory;
 import model.Task;
 import observer.TaskConflictObserver;
@@ -150,7 +151,7 @@ public class AstronautScheduleOrganizer {
                 logger.info("Task added successfully: " + task.getDescription() + " [" + task.getPriorityString() + "] " + 
                            task.getStartTime() + "-" + task.getEndTime());
             }
-        } catch (InvalidTimeFormatException | TaskConflictException | IllegalArgumentException e) {
+        } catch (InvalidTimeFormatException | TaskConflictException | DuplicateTaskException | IllegalArgumentException e) {
             System.out.println("[ERROR] " + e.getMessage());
             logger.error("Failed to add task: " + description, e);
         }
@@ -184,7 +185,7 @@ public class AstronautScheduleOrganizer {
                 System.out.println("Task edited successfully.");
                 logger.info("Task edited successfully: " + oldDescription + " -> " + newDescription);
             }
-        } catch (InvalidTimeFormatException | TaskConflictException | TaskNotFoundException | IllegalArgumentException e) {
+        } catch (InvalidTimeFormatException | TaskConflictException | TaskNotFoundException | DuplicateTaskException | IllegalArgumentException e) {
             System.out.println("[ERROR] " + e.getMessage());
             logger.error("Failed to edit task: " + oldDescription, e);
         }

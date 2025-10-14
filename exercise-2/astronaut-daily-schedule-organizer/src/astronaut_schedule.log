@@ -1,0 +1,23 @@
+=== Astronaut Schedule Organizer Started ===
+[2025-10-14 11:00:34] INFO: Initializing Astronaut Daily Schedule Organizer...
+[2025-10-14 11:00:34] INFO: Application initialized successfully and ready for use.
+[2025-10-14 11:00:56] INFO: Task added successfully: task 1 [HIGH] 12:00-13:00
+[2025-10-14 11:01:22] ERROR: Failed to add task: task 1 - Exception: Error: Task with description 'task 1' already exists. Please use a different description.
+=== Astronaut Schedule Organizer Started ===
+[2025-10-14 15:23:56] INFO: Initializing Astronaut Daily Schedule Organizer...
+[2025-10-14 15:23:56] INFO: Application initialized successfully and ready for use.
+[2025-10-14 15:23:56] INFO: Task added successfully: Test Task [HIGH] 08:00-09:00
+[2025-10-14 15:23:56] ERROR: Failed to add task: Test Task - Exception: Error: Task with description 'Test Task' already exists. Please use a different description.
+[2025-10-14 15:23:56] INFO: Shutdown requested by user.
+[2025-10-14 15:23:56] INFO: Shutting down application...
+[2025-10-14 15:23:56] INFO: Application stopped successfully.
+=== Astronaut Schedule Organizer Ended ===
+=== Astronaut Schedule Organizer Started ===
+[2025-10-14 15:37:45] INFO: Initializing Astronaut Daily Schedule Organizer...
+[2025-10-14 15:37:45] INFO: Application initialized successfully and ready for use.
+[2025-10-14 15:37:59] INFO: Task added successfully: mad [LOW] 10:00-11:00
+=== Astronaut Schedule Organizer Started ===
+[2025-10-14 15:58:55] INFO: Initializing Astronaut Daily Schedule Organizer...
+[2025-10-14 15:58:55] INFO: Application initialized successfully and ready for use.
+[2025-10-14 15:59:14] INFO: Task added successfully: task 1 [LOW] 10:00-11:00
+[2025-10-14 16:02:31] ERROR: Failed to add task: madddd - Exception: Invalid Time Format. Please use HHMM format.

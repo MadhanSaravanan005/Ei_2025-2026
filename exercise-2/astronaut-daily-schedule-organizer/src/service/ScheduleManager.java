@@ -3,6 +3,7 @@ package service;
 import exception.InvalidTimeFormatException;
 import exception.TaskConflictException;
 import exception.TaskNotFoundException;
+import exception.DuplicateTaskException;
 import model.Task;
 import factory.TaskFactory;
 import observer.Observer;
@@ -34,7 +35,12 @@ public class ScheduleManager {
         return instance;
     }
 
-    public void addTask(Task task) throws TaskConflictException, InvalidTimeFormatException {
+    public void addTask(Task task) throws TaskConflictException, InvalidTimeFormatException, DuplicateTaskException {
+        // Check for duplicate description
+        if (taskMap.containsKey(task.getDescription())) {
+            throw new DuplicateTaskException("Error: Task with description '" + task.getDescription() + "' already exists. Please use a different description.");
+        }
+        
         if (task.getStartTime().isAfter(task.getEndTime())) {
             throw new InvalidTimeFormatException("Error: Invalid time format");
         }
@@ -124,11 +130,16 @@ public class ScheduleManager {
     }
     
     public void editTask(String oldDescription, String newDescription, String newStartTime, String newEndTime, String newPriority) 
-            throws TaskNotFoundException, TaskConflictException, InvalidTimeFormatException {
+            throws TaskNotFoundException, TaskConflictException, InvalidTimeFormatException, DuplicateTaskException {
         
         Task existingTask = taskMap.get(oldDescription);
         if (existingTask == null) {
             throw new TaskNotFoundException("Task not found");
+        }
+        
+        // Check for duplicate new description
+        if (!oldDescription.equals(newDescription) && taskMap.containsKey(newDescription)) {
+            throw new DuplicateTaskException("Error: Task with description '" + newDescription + "' already exists. Please use a different description.");
         }
         
         Task tempTask = TaskFactory.createTask(newDescription, newStartTime, newEndTime, newPriority);
